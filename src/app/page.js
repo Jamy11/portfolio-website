@@ -2,6 +2,7 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -290,12 +291,32 @@ export default function Home() {
             <p className="text-xl mb-4">
               Let's build something amazing together!
             </p>
-            <a
-              href="mailto:jamy.rahman@example.com"
-              className="px-6 py-3 bg-teal-500 text-white rounded-full shadow-lg hover:bg-teal-600 transition"
-            >
-              Send an Email
-            </a>
+            <div className="flex justify-center space-x-4 mb-6">
+              <a
+                href="mailto:jamy.rahman@example.com"
+                className="px-6 py-3 bg-teal-500 text-white rounded-full shadow-lg hover:bg-teal-600 transition"
+              >
+                Send an Email
+              </a>
+            </div>
+            <div className="flex justify-center space-x-6">
+              <a
+                href="https://linkedin.com/in/jamy-rahman" // Replace with your LinkedIn profile URL
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-3xl hover:text-teal-300 transition"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://github.com/jamy11" // Replace with your GitHub profile URL
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-3xl hover:text-teal-300 transition"
+              >
+                <FaGithub />
+              </a>
+            </div>
           </motion.div>
         </section>
 
