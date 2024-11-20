@@ -253,23 +253,127 @@ export default function Home() {
             </motion.h2>
             {[
               {
-                name: "Brain Tumor Detection and Segmentation.",
-                description:
-                  "Designed and developed a full-stack web application for MRI-based brain tumor classification and segmentation. Users can upload MRI images to receive real-time tumor predictions and segmentation results with percentage-based accuracy. Leveraged Django REST API for the backend, Next.js for the frontend, and a CNN model built with Keras and TensorFlow. Delivered a reliable, user-friendly application independently, meeting project deadlines and ensuring high accuracy and performance.",
+                name: "Brain Tumor Detection and Segmentation",
+                description: (
+                  <>
+                    <b>Objective:</b> Developed a full-stack web application for
+                    MRI-based brain tumor classification and segmentation.
+                    <br />
+                    <b>Role and Contribution:</b>
+                    Designed the backend using Django REST API and the frontend
+                    using Next.js.
+                    <br />
+                    Built a CNN model with Keras and TensorFlow for real-time
+                    predictions.
+                    <br />
+                    Delivered the project independently, meeting deadlines with
+                    high accuracy and reliability.
+                    <br />
+                    <b>Tech Stack:</b> Django REST API, Next.js, TensorFlow,
+                    Keras
+                    <br />
+                    <b>Outcome:</b> Enabled accurate tumor detection with
+                    percentage-based predictions.
+                  </>
+                ),
+                github:
+                  "https://github.com/Jamy11/Brain-Tumor-Classification-segmentation",
+              },
+
+              {
+                name: "Air Quality Prediction Using Regression Models",
+                description: (
+                  <>
+                    <b>Objective:</b> Analyzed historical data to predict air
+                    quality levels using regression models.
+                    <br />
+                    <b>Role and Contribution:</b>
+                    Preprocessed data and engineered features for model
+                    training. <br />
+                    Built and evaluated models such as Linear Regression, Ridge,
+                    and Lasso. <br />
+                    <b>Tech Stack:</b> Python, pandas, scikit-learn, Matplotlib
+                    <br />
+                    <b>Outcome:</b> Achieved an R² score above 0.85 for accurate
+                    air quality predictions.
+                  </>
+                ),
+                github:
+                  "https://github.com/Jamy11/Air-Quality-Prediction-Using-Regression-Models",
+              },
+              {
+                name: "Multi-Layer Convolutional Image Processing with 2D and 3D Implementation | Github",
+                description: (
+                  <>
+                    <b>Objective:</b> Implemented a multi-layer convolutional
+                    neural network with padding, ReLU activation, max pooling,
+                    and Sigmoid functions for image processing tasks.
+                    <br />
+                    <b>Role and Contribution:</b>
+                    Applied 8 convolutional kernels to the input image to
+                    extract relevant features. <br />
+                    Used ReLU activation after each convolution to introduce
+                    non-linearity.
+                    <br />
+                    Implemented max pooling after each ReLU layer to downsample
+                    and retain important features.
+                    <br />
+                    Stacked or summed the ReLU images after each convolution to
+                    form a final feature map.
+                    <br />
+                    Created two versions of the project: one for 3D images
+                    (Assignment 2) and one for 2D images (Assignment 2_2D) due
+                    to issues with max pooling on 3D data.
+                    <br />
+                    <b>Tech Stack:</b> Python, NumPy, TensorFlow (Keras), OpenCV
+                    <br />
+                    <b>Outcome:</b> Successfully processed 2D images with max
+                    pooling, achieving accurate feature extraction and image
+                    representation. The 3D version (Assignment 2) is still under
+                    development due to technical challenges.
+                  </>
+                ),
+                github:
+                  "https://github.com/Jamy11/convolutionpadding-maxpooling-relu-sigmoid-implementation",
               },
               {
                 name: "Online Job Portal",
-                description:
-                  "Built a responsive web application enabling user authentication via email and Google login, profile creation and updates, and job application submissions. Employers can post job listings, review CVs, and reject applications. The platform is developed using HTML, CSS, and JavaScript on the frontend, with a Node.js and MongoDB backend. Integrated Firebase for authentication and real-time updates, ensuring seamless user interactions and performance.",
+                description: (
+                  <>
+                    <b>Objective:</b> Created a responsive web platform for job
+                    seekers and employers.
+                    <br />
+                    <b>Role and Contribution:</b>
+                    Developed user authentication with email and Google login.{" "}
+                    <br />
+                    Implemented job application and employer review features.{" "}
+                    <br />
+                    Ensured smooth performance with Firebase for real-time
+                    updates. <br />
+                    <b>Tech Stack:</b> Node.js, MongoDB, Firebase, HTML, CSS,
+                    JavaScript
+                    <br />
+                    <b>Outcome:</b> Delivered a seamless and secure job
+                    application process for users.
+                  </>
+                ),
+                github: "https://github.com/Jamy11/onlne-job-portal",
               },
-            ].map(({ name, description }) => (
+            ].map(({ name, description, github }) => (
               <motion.div
                 key={name}
                 className="p-6 bg-white shadow-lg rounded-lg mb-6 hover:shadow-xl transition"
                 whileHover={{ scale: 1.05 }}
               >
-                <h3 className="text-xl font-semibold text-teal-600">{name}</h3>
-                <p className="text-gray-700">{description}</p>
+                <h3 className="text-xl font-semibold text-teal-600">
+                  {name}{" "}
+                  <a target="_blank" href={github}>
+                    <span style={{ color: "blue" }}>| GitHub Link</span>
+                  </a>
+                </h3>
+                <div className="text-gray-700 whitespace-pre-line">
+                  {description}
+                </div>
               </motion.div>
             ))}
           </div>
@@ -301,7 +405,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center space-x-6">
               <a
-                href="https://linkedin.com/in/jamy-rahman" // Replace with your LinkedIn profile URL
+                href="https://linkedin.com/in/jamy-rahman" //  LinkedIn profile URL
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white text-3xl hover:text-teal-300 transition"
@@ -309,7 +413,7 @@ export default function Home() {
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com/jamy11" // Replace with your GitHub profile URL
+                href="https://github.com/jamy11" // GitHub profile URL
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white text-3xl hover:text-teal-300 transition"
