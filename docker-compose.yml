@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app:cached         # Your source code
+      - /app/node_modules      # Keep container node_modules isolated
+      - next-data:/app/.next   # .next generated inside container
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - CHOKIDAR_INTERVAL=200
+    command: npm run dev
+
+volumes:
+  next-data:
