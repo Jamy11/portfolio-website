@@ -17,17 +17,19 @@ export default function SkillsSection({ skillGroups }) {
       {...fadeUp}
       className="mx-auto w-full max-w-6xl px-6 py-12 lg:px-8"
     >
-      <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div className="mb-8 grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
           <p className="section-label">Skills</p>
           <h2 className="section-title">
             Tools I use to turn ideas into working products.
           </h2>
         </div>
-        <p className="max-w-xl text-sm leading-7 text-slate-400">
-          A mix of frontend, backend, and ML tooling that lets me move from
-          concept to implementation without losing momentum.
-        </p>
+        <div className="glass-panel flex rounded-[2rem] p-8 text-base leading-8 text-slate-300 lg:items-center">
+          <p>
+            A mix of frontend, backend, and machine learning tooling that lets
+            me move from concept to implementation without losing momentum.
+          </p>
+        </div>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
