@@ -18,15 +18,18 @@ export default function AboutSection() {
       </div>
       <div className="glass-panel rounded-[2rem] p-8 text-base leading-8 text-slate-300">
         <p>
-          My background blends software engineering with machine learning,
-          which means I like both structured product work and exploratory
-          problem solving. I care about interfaces that are easy to use, code
-          that stays maintainable, and projects that teach me something new.
+          My background combines modern frontend development with machine
+          learning, with a strong focus on building systems that are scalable,
+          efficient, and well-structured. I’ve worked extensively with React and
+          Next.js to develop production-level applications, while also designing
+          and experimenting with ML models.
         </p>
         <p className="mt-5">
-          Whether I&apos;m improving a frontend, supporting users, or
-          experimenting with models, I try to bring the same mindset:
-          thoughtful execution, steady iteration, and attention to detail.
+          comfortable working across both product-driven development and
+          data-focused problem solving — from crafting clean, responsive
+          interfaces to improving model performance. My approach is simple:
+          write maintainable code, avoid unnecessary complexity, and focus on
+          solutions that actually work.
         </p>
       </div>
     </motion.section>

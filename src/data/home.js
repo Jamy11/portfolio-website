@@ -10,22 +10,34 @@ export const skillGroups = [
   {
     title: "Frontend",
     icon: "laptop",
-    items: ["React", "Next.js", "Tailwind CSS", "JavaScript"],
+    items: ["React", "Next.js", "Tailwind CSS", "JavaScript", "Responsive UI"],
   },
   {
     title: "Backend",
     icon: "laptop",
-    items: ["Django REST API", "Node.js", "PHP", "Firebase"],
+    items: ["Django REST API", "Node.js", "PHP", "Firebase", "API Design"],
   },
   {
     title: "Machine Learning",
     icon: "brain",
-    items: ["TensorFlow", "Keras", "CNNs", "Model Evaluation"],
+    items: [
+      "Data Preprocessing",
+      "Model Evaluation",
+      "TensorFlow",
+      "Keras",
+      "CNNs",
+    ],
   },
   {
     title: "Workflow",
     icon: "arrow",
-    items: ["GitHub", "Agile", "Testing", "Debugging"],
+    items: [
+      "GitHub",
+      "Jira",
+      "Testing",
+      "Debugging",
+      "Performance Optimization",
+    ],
   },
 ];
 
@@ -33,16 +45,16 @@ export const experience = [
   {
     title: "Software Engineer",
     company: "BrainStorm Force",
-    period: "Aug 2022 - Dec 2022",
+    period: "Aug 2021 - Dec 2022",
     summary:
-      "Built product features for widely used WordPress plugins, improved PHP and React experiences, and supported reliable delivery through testing and bug fixing.",
+      "Developed 3 custom skins for the Presto Player plugin, along with contributing additional features to improve functionality and user experience. Worked on Spectra Pro, implementing major architectural improvements, optimizing the codebase, and contributing to pro-level features. Focused on scalability, maintainability, and delivering high-quality, production-ready components.",
   },
   {
     title: "Teaching Assistant",
     company: "AIUB",
     period: "May 2021 - Aug 2021",
     summary:
-      "Helped students strengthen their understanding of programming concepts through labs, code reviews, and practical debugging support.",
+      "Supported 40+ students in strengthening core programming concepts through lab sessions, code reviews, and hands-on debugging. Improved students’ problem-solving skills by providing structured guidance and practical examples.",
   },
 ];
 
@@ -52,8 +64,7 @@ export const projects = [
     blurb:
       "A full-stack MRI analysis app combining a Django REST backend, a Next.js frontend, and a TensorFlow model for real-time predictions.",
     stack: "Next.js, Django REST API, TensorFlow, Keras",
-    github:
-      "https://github.com/Jamy11/Brain-Tumor-Classification-segmentation",
+    github: "https://github.com/Jamy11/Brain-Tumor-Classification-segmentation",
   },
   {
     name: "Air Quality Prediction",

@@ -20,15 +20,16 @@ export default function HeroSection() {
           className="relative"
         >
           <span className="mb-6 inline-flex rounded-full border border-[var(--accent)]/30 bg-[var(--panel-strong)] px-4 py-2 text-sm text-[var(--accent-soft)]">
-            Software Engineer + Machine Learning Enthusiast
+            Software Engineer • Machine Learning Engineer
           </span>
           <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Building thoughtful digital experiences with code and curiosity.
+            Clean code, smart systems, and real-world solutions.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-            I&apos;m Jamy Rahman. I enjoy creating responsive web products,
-            learning fast, and shipping work that feels polished, useful, and
-            human.
+            I&apos;m Jamy Rahman. — working at the intersection of software
+            engineering and machine learning. Known for turning ideas into
+            solid, scalable systems… and occasionally over-optimizing things
+            just for fun.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
